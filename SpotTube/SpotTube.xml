@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>spottube</Name>
+  <Repository>thewicklowwolf/spottube</Repository>
+  <Registry>https://hub.docker.com/r/thewicklowwolf/spottube/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://hub.docker.com/r/thewicklowwolf/spottube/</Support>
+  <Project/>
+  <Overview>Download Spotify Playlists, Artists, Albums or Tracks via YouTube.&#xD;
+&#xD;
+SpotTube is a tool for downloading Spotify Artists/Albums/Tracks/Playlists via yt-dlp.&#xD;
+&#xD;
+https://github.com/TheWicklowWolf/SpotTube&#xD;
+&#xD;
+https://hub.docker.com/r/thewicklowwolf/spottube/&#xD;
+&#xD;
+If you like an app, please donate to the respective developers; I'm just writing XML files over here. But perhaps you have some change to spare afterwards, maybe chuck me a buck? https://ko-fi.com/fireflies38</Overview>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:5000]</WebUI>
+  <TemplateURL/>
+  <Icon>https://avatars.githubusercontent.com/u/111055425?s=48&amp;amp;v=4</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1752519562</DateInstalled>
+  <DonateText/>If you like an app, please donate to the respective developers; I'm just writing XML files over here. But perhaps you have some change to spare afterwards, maybe chuck me a buck?</DonateText>
+  <DonateLink/>https://ko-fi.com/fireflies38</DonateLink>
+  <Requires/>
+  <Config Name="Container Port" Target="5000" Default="5000" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">5000</Config>
+  <Config Name="LANG" Target="LANG" Default="C.UTF-8" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">C.UTF-8</Config>
+  <Config Name="PYTHON_VERSION" Target="PYTHON_VERSION" Default="3.12.7" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">3.12.7</Config>
+  <Config Name="RELEASE_VERSION" Target="RELEASE_VERSION" Default="0.1.13" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">0.1.13</Config>
+  <Config Name="Community Applications Conversion" Target="Community_Applications_Conversion" Default="true" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">true</Config>
+  <Config Name="spotify_client_id" Target="spotify_client_id" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="spotify_client_secret" Target="spotify_client_secret" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="true"/>
+  <Config Name="thread_limit" Target="thread_limit" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">1</Config>
+  <Config Name="artist_track_selection" Target="artist_track_selection" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">all</Config>
+  <Config Name="/path/to/config" Target="/path/to/config" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false"/>
+  <Config Name="/data/media/spottube" Target="/data/media/spottube" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false"/>
+  <Config Name="/etc/localtime" Target="/etc/localtime" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false"/>
+  <TailscaleStateDir/>
+</Container>
